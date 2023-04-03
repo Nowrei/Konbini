@@ -5,7 +5,7 @@
 {% block body %}
 <body style="background-color:#F5F6F8">
 	<nav class="sticky top-0 flex-no-wrap relative flex w-full items-center justify-between bg-white max-lg:bg-tahiti-400 py-2  lg:flex-wrap lg:justify-start" data-te-navbar-ref>
-		<div class="flex w-full flex-wrap items-center justify-between lg:px-6">
+		<div class="flex w-full flex-wrap items-center justify-between lg:px-6 ">
 			<img class="h-16 ml-20 max-xl:ml-0 max-lg:ml-3" src="{{ asset('build/images/konbini.png')}}"/>
 			<button class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden" type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="[&>svg]:w-7">
@@ -28,23 +28,43 @@
 						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Vidéo</a>
 					</li>
 					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white">
-						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Pop-culture</a>
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Pop-culture</a>
 					</li>
 					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white">
-						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Société</a>
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Société</a>
 					</li>
 					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white">
-						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Opinions</a>
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Opinions</a>
 					</li>
 					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white">
-						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Internet</a>
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="" >Internet</a>
 					</li>
 					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white">
-						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Lifestyle</a>
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Lifestyle</a>
 					</li>
 					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white">
-						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white" href="">Podcast</a>
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Podcast</a>
 					</li>
+					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white lg:hidden     ">
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Konbini Radio</a>
+					</li>
+					<li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6 max-lg:border-y-2 max-lg:border-white lg:hidden">
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white max-lg:text-b" href="">Partenaire</a>
+            <div class="flex flex-row items-start justify-start pt-4">
+            <a class="p-2 bg-white font-bold rounded-md text-konbini-200 hover:text-konbini-100 max-lg:text-konbini-600 mr-6 md-mr-4" href="">Pépites</a>
+            <a class="p-2 bg-white font-bold rounded-md text-konbini-200 hover:text-konbini-100 max-lg:text-konbini-600 mr-6 md-mr-4" href="">Healthyvores</a>
+            <a class="p-2 bg-white font-bold rounded-md text-konbini-200 hover:text-konbini-100 max-lg:text-konbini-600 mr-6 md:mr-4" href="">Les 
+            Etincelans</a>
+            </div>
+					</li>
+       <li class="max-lg:bg-konbini-400 max-lg:w-screen max-lg:p-6  lg:hidden">
+						<a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white text-small" href="">Qui somme nous</a></br>
+            <a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white text-small" href="">Mentions légales</a></br>
+            <a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white text-small" href="">Charte de données personnelles et cookies</a></br>
+            <a class="font-bold text-konbini-200 hover:text-konbini-100 max-lg:text-white text-small" href="">Conditions générales d'utilisations</a>
+					</li>
+
+          </li>
 				</ul>
 				<!-- Left links -->
 			</div>
@@ -53,7 +73,7 @@
 			<!-- Right elements -->
 			<div class="relative flex items-center max-lg:hidden">
 				<div class="relative" data-te-dropdown-ref>
-					<button style="background-color:#F5F6F8" class="flex items-center font-bold whitespace-nowrap rounded-full  mr-6 px-4 pt-2.5 pb-2 text-sm  uppercase leading-normal text-tahiti-200" type="button" id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false" data-te-ripple-init data-te-ripple-color="light">
+					<button class="flex items-center bg-konbini-300 font-bold whitespace-nowrap rounded-full  mr-6 px-4 pt-2.5 pb-2 text-p uppercase leading-normal text-tahiti-200" type="button" id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false" data-te-ripple-init data-te-ripple-color="light">
 						Partenaires
 						<p class="opacity-20 ml-1">|</p>
 
@@ -63,7 +83,7 @@
 							</svg>
 						</span>
 					</button>
-					<ul class="absolute z-[1000] float-left m-0 mt-10 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white text-left text-base [&[data-te-dropdown-show]]:block" aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+					<ul class="absolute z-[1000] float-left m-0 mt-10 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white text-left max-lg:text-base [&[data-te-dropdown-show]]:block" aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
 						<li>
 							<a class="block w-full whitespace-nowrap bg-white py-2 px-4 font-bold  text-tahiti-200  " href="#" data-te-dropdown-item-ref>Devenir Partenaire</a>
 						</li>
@@ -80,12 +100,14 @@
 							<a class="block w-full whitespace-nowrap bg-white py-2 px-4 font-bold  text-tahiti-200 " data-te-dropdown-item-ref>Tout les partenaires</a>
 						</li>
 
+
 					</ul>
 				</div>
 			</div>
 
 		</nav>
-	</body>
-</body>
+
+
+
 
 {% endblock %}

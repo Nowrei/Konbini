@@ -3,6 +3,12 @@ module.exports = {
   content: ['./templates/**/*.html.twig',
   './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
+    fontSize: {
+      small: ['14px'],
+      b: ['20px'],
+      p: ['16px']
+
+    },
     extend: {
       colors: {
     
