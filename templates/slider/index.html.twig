@@ -6,21 +6,24 @@
 {% block body %}
 <body style="background-color:#F5F6F8">
 	{% include('navbar/index.html.twig') %}
+	
 	<div class="flex justify-center">
-		<div class="w-80% h-350 p-4 mt-20 section-title text-sm font-semibold text-tahiti-100 sm:text-sm sm:tracking-tight lg:text-5xl bg-white" style="text-align: center; ">
+
+		<div class="w-65 h-350 p-4 mt-20 section-title text-sm font-semibold text-tahiti-100 sm:text-sm sm:tracking-tight lg:text-5xl bg-white" style="text-align: center; ">
+		
 			<div id="carouselExampleIndicators" class="relative" data-te-carousel-init data-te-carousel-slide>
 
 				<div class="h-80 relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-					<div class="flex flex-row -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item data-te-carousel-active>
+					<div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item data-te-carousel-active>
 						<div class="h-80 bg-konbini-400 w-50%  rounded-l-lg">
 
 							<h2 class="text-left text-s text-white p-4 md:p-6 font-black lx:py-8" style="color: white;">
-								Dring dring et vroum vroum, on a classé (objectivement) les modes de transport en ville du plus relou au plus agréable
+								Les trottinettes à Paris, c'est (bientôt) fini
 							</h2>
 
 						</div>
 						<div class="absolute inset-y-0 right-0 w-50%">
-							<img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="object-cover w-full h-full rounded-r-lg" alt="Wild Landscape"/>
+							<img src="{{ asset('build/images/33CH7KE-highres.png')}}" class="object-cover w-full h-full rounded-r-lg" alt="Wild Landscape"/>
 						</div>
 					</div>
 
@@ -31,17 +34,17 @@
 							</h2>
 						</div>
 						<div class="absolute inset-y-0 right-0 w-50%">
-							<img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="object-cover w-full h-full rounded-r-lg" alt="Camera"/>
+							<img src="{{ asset('build/images/Feat-velo-voiture.png')}}" class="object-cover w-full h-full rounded-r-lg" alt="Camera"/>
 						</div>
 					</div>
 					<div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
 						<div class="h-80 bg-konbini-400 w-50% rounded-l-lg">
 							<h2 class="text-left text-s text-white p-4 md:p-6 font-black lx:py-8" style="color: white;">
-								Dring dring et vroum vroum, on a classé (objectivement) les modes de transport en ville du plus relou au plus agréable
+								Top Chef: La saison "All Stars" sera finalement bien diffusée en France
 							</h2>
 						</div>
 						<div class="absolute inset-y-0 right-0 w-50%">
-							<img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="object-cover w-full h-full rounded-r-lg" alt="Exotic Fruits"/>
+							<img src="{{ asset('build/images/topchefallstars.png')}}" class="object-cover w-full h-full rounded-r-lg" alt="Exotic Fruits"/>
 						</div>
 					</div>
 
