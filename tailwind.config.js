@@ -26,6 +26,12 @@ module.exports = {
         '536px': '536px',
         '200px': '200px',
       },
+
+      height: {
+        
+        '350': '350px',
+        '100': '100%'
+      },
       colors: {
     
         'white': '#ffffff',
