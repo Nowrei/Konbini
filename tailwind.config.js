@@ -42,6 +42,7 @@ module.exports = {
         '100': '100%',
         '501': '501px',
         'px': '75px',
+        'x': '60px',
       },
       colors: {
     
