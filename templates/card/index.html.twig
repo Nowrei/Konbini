@@ -235,33 +235,96 @@
 
 	</div>
 	<div class="w-30">
-		<div class="bg-konbini-300 h-80 mx-8 rounded-lg"></div>
+		<div class="bg-konbini-300 h-fit mx-8 rounded-lg p-2">
+			<ul class="flex justify-center mb-5 mx-auto flex list-none flex-col flex-wrap md:flex-row " role="tablist" data-te-nav-ref>
+				<li role="presentation">
+					<a href="#tabs-home" class="my-2 block border-2 border-konbini-600 rounded-l-lg px- p-3.5 pb-3.5 text-xs font-bold uppercase leading-tight text-konbini-600 hover:isolate  hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:bg-konbini-600 data-[te-nav-active]:text-white" data-te-toggle="pill" data-te-target="#tabs-home" data-te-nav-active role="tab" aria-controls="tabs-home" aria-selected="true">Derniers </br>articles</a>
+				</li>
+				<li role="presentation">
+					<a href="#tabs-profile" class="my-2 block border-2 border-konbini-600 rounded-r-lg  px-6 py-3.5 pb-3.5 text-xs font-bold uppercase leading-tight text-konbini-600 hover:isolate  hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:bg-konbini-600 data-[te-nav-active]:text-white" data-te-toggle="pill" data-te-target="#tabs-profile" role="tab" aria-controls="tabs-profile" aria-selected="false">Les plus </br>lus</a>
+				</li>
+
+
+			</ul>
+			<div class="mb-6">
+			<!-- Dernier article -->
+				<div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Mamma mia : oui, le film Super Mario Bros est vraiment une grande réussite</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
+					</div>
+
+				</div>
+				<!-- Fin div -->
+				<!-- Plus lus -->
+				<div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Voilà pourquoi j’ai freiné mon binge scrolling après avoir maté le docu Génération écrans : génération malade</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 		<div class="flex flex-col bg-konbini-800 text-white mx-8 rounded-lg mt-10">
-		<p class="p-4 font-bold text-big ">Pépite by prime video
-			<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
-				<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
-				<a class="text-p font-bold ml-4 mx-auto" href="">Voilà pourquoi j’ai freiné mon binge scrolling après avoir maté le docu Génération écrans : génération malade</a>
-			</div>
-			<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
-				<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
-				<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
-			</div>
-			<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
-				<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
-				<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
-			</div>
-			<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
-				<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
-				<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
-			</div>
-			<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
-				<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
-				<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
-			</div>
-			<div class="flex justify-start mt-10 mx-auto">
-				<a class="my-6 mx-6 bg-white text-konbini-600 text-s pt-0.5 pr-3 pb-0.5 pl-3" href="">Voir la playlist</a>
-			</div>
+			<p class="p-4 font-bold text-big ">Pépite by prime video
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Voilà pourquoi j’ai freiné mon binge scrolling après avoir maté le docu Génération écrans : génération malade</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
+				</div>
+				<div class="flex justify-start mt-10 mx-auto">
+					<a class="my-6 mx-6 bg-white text-konbini-600 text-s pt-0.5 pr-3 pb-0.5 pl-3" href="">Découvrir pépite</a>
+				</div>
+			</p>
 		</div>
 
 
@@ -270,6 +333,7 @@
 	</div>
 </div>
 <div class="mb-4"></div>
+
 
 
 
