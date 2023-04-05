@@ -328,12 +328,38 @@
 		</div>
 
 
-		<div class="bg-konbini-100 h-80 mx-8 rounded-lg mt-10"></div>
+<div class="bg-konbini-100 h-fit mx-8 rounded-lg mt-10 inline-flex flex flex-col">
+    <p class="p-2 font-bold text-b text-left">Le meilleur de <span class="text-konbini-400 font-bold">Konbini</span>, par la rédac de <span class="text-konbini-400 font-bold">Konbini</span> en exclu dans sa <span class="text-konbini-400 font-bold">Newsletter</span></p>
+    <form class="flex flex-col gap-4 mb-auto h-auto w-80">
+	<input type="email" name="email" placeholder="Email" class=" bg-white text-konbini-600 text-s"  />
+	<a class="my-6 mx-6 w-70 bg-white text-konbini-600 text-s pt-0.5 pr-3 pb-0.5 pl-3" href="">Découvrir pépite</a>
+	</form>
+	<div class="p-2 font-bold text-b text-left">
+	<a class="text-left font-small text-si text-konbini-600" id="toggle-text">En renseignant votre nom et adres...</br>
+	<span class="cursor-pointer underline decoration-1">Lire plus</span></a>
+    <div class="hidden" id="text-to-show">
+        <p class="text-left font-small text-si text-konbini-600">En renseignant votre nom et adresse email, vous acceptez de recevoir chaque semaine notre newsletter et vous prenez connaissance de notre <a class="underline" href="https://konbini-privacy-policy.mystrikingly.com/">Politique de confidentialité.</a></p>
+    </div>
+	</div>
+</div>
+
+
+
+
 
 	</div>
 </div>
 <div class="mb-4"></div>
 
+<script>
+  const toggleBtn = document.getElementById('toggle-text');
+  const textToShow = document.getElementById('text-to-show');
+
+  toggleBtn.addEventListener('click', () => {
+    textToShow.classList.toggle('hidden');
+    toggleBtn.classList.add('hidden');
+  });
+</script>
 
 
 
