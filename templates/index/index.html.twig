@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<body style="background-color:#F5F6F8">
+{% include('navbar/index.html.twig') %}
+	<div class="flex justify-center">
+		<div class="w-80 h-auto mt-10 section-title text-sm font-semibold text-tahiti-100 sm:text-sm sm:tracking-tight lg:text-5xl bg-white" style="text-align: center; ">
+			{% include('slider/index.html.twig') %}
+			{% include('card/index.html.twig') %}
+		</div>
+	</div>
+			{% include('footer/index.html.twig') %}
+</body>
+{% endblock %}

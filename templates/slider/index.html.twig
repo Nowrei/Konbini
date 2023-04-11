@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SliderController!
+{% endblock %}
+
+{% block body %}
+
+<div class="flex justify-start text-s p-2 ml-2 max-lg:hidden">
+<p class="bg-konbini-600 rounded-full pt-0.5 pr-3 pb-0.5 pl-3 text-white shrink">À la une
+</div>		
+<div id="carouselExampleIndicators" class="relative p-4 max-lg:hidden" data-te-carousel-init data-te-carousel-slide>
+
+	<div class="h-80 relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+		<div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item data-te-carousel-active>
+			<div class="h-80 bg-konbini-400 w-50%  rounded-l-lg">
+
+				<h2 class="text-left text-s text-white p-4 md:p-6 font-black lx:py-8" style="color: white;">
+					Les trottinettes à Paris, c'est (bientôt) fini
+				</h2>
+
+			</div>
+			<div class="absolute inset-y-0 right-0 w-50%">
+				<img src="{{ asset('build/images/33CH7KE-highres.png')}}" class="object-cover w-full h-full rounded-r-lg" alt="Wild Landscape"/>
+			</div>
+		</div>
+
+		<div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
+			<div class="h-80 bg-konbini-400 w-50%  rounded-l-lg">
+				<h2 class="text-left text-s text-white p-4 md:p-6 font-black lx:py-8" style="color: white;">
+					Dring dring et vroum vroum, on a classé (objectivement) les modes de transport en ville du plus relou au plus agréable
+				</h2>
+			</div>
+			<div class="absolute inset-y-0 right-0 w-50%">
+				<img src="{{ asset('build/images/Feat-velo-voiture.png')}}" class="object-cover w-full h-full rounded-r-lg" alt="Camera"/>
+			</div>
+		</div>
+		<div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
+			<div class="h-80 bg-konbini-400 w-50% rounded-l-lg">
+				<h2 class="text-left text-s text-white p-4 md:p-6 font-black lx:py-8" style="color: white;">
+					Top Chef: La saison "All Stars" sera finalement bien diffusée en France
+				</h2>
+			</div>
+			<div class="absolute inset-y-0 right-0 w-50%">
+				<img src="{{ asset('build/images/topchefallstars.png')}}" class="object-cover w-full h-full rounded-r-lg" alt="Exotic Fruits"/>
+			</div>
+		</div>
+
+	</div>
+	<button class="ml-4 absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-start border-0 bg-none p-0 text-center text-white transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" type="button" data-te-target="#carouselExampleIndicators" data-te-slide="prev">
+		<span class="inline-block h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+			</svg>
+		</span>
+		<span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+	</button>
+	<button class="mr-4 absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-end border-0 bg-none p-0 text-center text-white  transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" type="button" data-te-target="#carouselExampleIndicators" data-te-slide="next">
+		<span class="inline-block h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+			</svg>
+		</span>
+		<span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+	</button>
+</div>
+
+
+
+{% endblock %}
+

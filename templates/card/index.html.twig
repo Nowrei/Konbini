@@ -1,0 +1,368 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CardController!{% endblock %}
+
+{% block body %}
+
+<div class="flex mt-14 max-lg:hidden">
+	<div class="w-70">
+		<!-- Fast and Curious -->
+		<div class="flex justify-start flex-col bg-konbini-600 text-white h-fit">
+			<div class="flex justify-start">
+				<a class="my-6 mx-6 bg-white text-konbini-600 text-s font-blod rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Fast and Curious ></a>
+			</div>
+			<div class="my-6 mx-8 flex justify-start">
+				<p class="text-s font-bold">Nos dernières vidéos</p>
+			</div>
+			<div class="my-3 mx-8 flex justify-start">
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/PANAYOTIS-FAST-_YT.00_00_21_09.Still001.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-white text-lg font-bold mt-6" href="">Plutot Vine ou TikTok?
+					</br>
+					Panayotis Pascot aka l'homme le plus drôle du monde à tranché</a>
+
+			</div>
+
+
+			<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+				<img src="{{ asset('build/images/K_ALBAN-LENOIR_FC_DEF_YT-.00_00_00_00.Still001.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+				<a class="text-white text-lg font-bold mt-6" href="">On embarque avec Alban Lenoir pour un Fast and Curious ultra faaast
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/YTPBLV.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-white text-lg font-bold mt-6" href="">Le casting de plus belle la vie nous fait ses adieux avec un MEGA Fast and Curious
+
+					</div>
+
+				</div>
+				<div class="flex justify-start mt-28">
+					<a class="my-6 mx-6 bg-white text-konbini-600 text-s pt-0.5 pr-3 pb-0.5 pl-3" href="">Voir la playlist</a>
+				</div>
+			</div>
+			<!-- Pop Culture -->
+			<div class="flex justify-start flex-col bg-white h-fit mt-3">
+				<div class="flex justify-start">
+					<a class="mt-6 mb-0.5 mx-6 bg-konbini-700 text-white text-s rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Pop Culture ></a>
+				</div>
+				<div class="mt-0.5 mx-8 flex justify-start">
+
+					<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Audrey-Couppé-de-Kermadec_feat.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+						<a class="text-lg font-bold mt-6" href="">L’artiste Audrey Couppé de Kermadec célèbre les voix silenciées des personnes noires et queers</a>
+
+					</div>
+
+
+					<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Usher-Beyoncé.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+						<a class="text-lg font-bold mt-6" href="">Et l’Oscar du pire poisson d’avril de 2023 revient à… Usher</a>
+
+					</div>
+
+
+					<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Snoop-Dogg-WWE.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+						<a class="text-lg font-bold mt-6" href="">Et PAFFFFF : Snoop Dogg improvise durant un match de la WWE et met une droite à un catcheur</a>
+
+					</div>
+
+				</div>
+				<div class="flex justify-start mt-28"></div>
+			</div>
+			<!-- Fin div -->
+			<!-- Société -->
+			<div class="flex justify-start flex-col bg-white h-fit mt-3">
+				<div class="flex justify-start">
+					<a class="mt-6 mb-0.5 mx-6 bg-konbini-100 text-konbini-600 text-s rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Société ></a>
+				</div>
+				<div class="mt-0.5 mx-8 flex justify-start">
+
+					<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/33CH7KE-highres.png')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+						<a class="text-lg font-bold mt-6" href="">Les trottinettes à Paris, c’est (bientôt) fini</a>
+
+					</div>
+
+
+					<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/GettyImages-556420037.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+						<a class="text-lg font-bold mt-6" href="">Des universités chinoises donnent une semaine de vacances à leurs étudiants pour qu’ils “tombent amoureux”</a>
+
+					</div>
+
+
+					<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/trump-feat-1.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+						<a class="text-lg font-bold mt-6" href="">Plutot Vine ou TikTok?
+						</br>
+						Panayotis Pascot aka l'homme le plus drôle du monde à tranché</a>
+
+				</div>
+
+			</div>
+			<div class="flex justify-start mt-28"></div>
+		</div>
+		<!-- Fin div -->
+		<!-- Opinion -->
+		<div class="flex justify-start flex-col bg-white h-fit mt-3">
+			<div class="flex justify-start">
+				<a class="mt-6 mb-0.5 mx-6 bg-konbini-700 text-white text-s rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Opinion ></a>
+			</div>
+			<div class="mt-0.5 mx-8 flex justify-start">
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/PANAYOTIS-FAST-_YT.00_00_21_09.Still001.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Dring dring et vroum vroum, on a classé (objectivement) les modes de transport en ville du plus relou au plus agréable</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/Feat-velo-voiture.png')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Mais c’est quoi, la rage, ce genre de rap dont tout le monde parle ?</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/pnl.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Pourquoi 2015 est la meilleure année de rap en français ?</a>
+
+				</div>
+
+			</div>
+			<div class="flex justify-start mt-28"></div>
+		</div>
+		<!-- Fin div -->
+		<!-- Internet -->
+		<div class="flex justify-start flex-col bg-white h-fit mt-3">
+			<div class="flex justify-start">
+				<a class="mt-6 mb-0.5 mx-6 bg-konbini-400 text-white text-s rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Internet ></a>
+			</div>
+			<div class="mt-0.5 mx-8 flex justify-start">
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/emoji-1.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Quoi ?</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/feat-seb.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Seb au Kirghizistan : 4 choses à retenir sur cette aventure de maboul</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/TwitterCheckFeat.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Ancien badge, Twitter Blue, payé ou pas payé, on vous explique le nouveau système de certification de Twitter</a>
+
+				</div>
+
+			</div>
+			<div class="flex justify-start mt-28"></div>
+		</div>
+		<!-- Fin div -->
+		<!-- Lifestyle -->
+		<div class="flex justify-start flex-col bg-white h-fit mt-3">
+			<div class="flex justify-start">
+				<a class="mt-6 mb-0.5 mx-6 bg-konbini-400 text-white text-s rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Lifestyle ></a>
+			</div>
+			<div class="mt-0.5 mx-8 flex justify-start">
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/saucisson-999-e1680536041403.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Important : le championnat de France de saucisson est de retour</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/aildesours-feat.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Oh la bouboule à l’ail des ours !</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/logo-NBA.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Les joueurs de NBA pourront désormais manger des sandwichs</a>
+
+				</div>
+
+			</div>
+			<div class="flex justify-start mt-28"></div>
+		</div>
+		<!-- Fin div -->
+		<!-- Podcast -->
+		<div class="flex justify-start flex-col bg-white h-fit mt-3">
+			<div class="flex justify-start">
+				<a class="mt-6 mb-0.5 mx-6 bg-konbini-600 text-white text-s rounded-full pt-0.5 pr-3 pb-0.5 pl-3" href="">Podcast ></a>
+			</div>
+			<div class="mt-0.5 mx-8 flex justify-start">
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/KONBINI-RADIO-RITMO-FATALE-KENDAL-FEAT.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">En écoute : on a demandé à Kendal du label Ritmo Fatale de nous livrer LE mix pour turn up un club</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/niel-feat.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">Venez voir notre podcast Small Talk en live (en plus, y aura Jérôme Niel) (et puis aussi David Castello-Lopes)</a>
+
+				</div>
+
+
+				<div class="p-4 w-72 h-40 hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/KONBINI-RADIO-CLUB-MIX-COVER-EG-VIDEO-FEAT.webp')}}" alt="Image" class="object-cover w-full h-full rounded-lg mb-3">
+					<a class="text-lg font-bold mt-6" href="">En écoute : on a demandé à EG de nous livrer LE mix pour turn up un club</a>
+
+				</div>
+
+			</div>
+			<div class="flex justify-start mt-28"></div>
+		</div>
+		<!-- Fin div -->
+
+	</div>
+	<div class="w-30">
+		<div class="bg-konbini-300 h-fit mx-8 rounded-lg p-2">
+			<ul class="flex justify-center mb-5 mx-auto flex list-none flex-col flex-wrap md:flex-row " role="tablist" data-te-nav-ref>
+				<li role="presentation">
+					<a href="#tabs-home" class="my-2 block border-2 border-konbini-600 rounded-l-lg px- p-3.5 pb-3.5 text-xs font-bold uppercase leading-tight text-konbini-600 hover:isolate  hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:bg-konbini-600 data-[te-nav-active]:text-white" data-te-toggle="pill" data-te-target="#tabs-home" data-te-nav-active role="tab" aria-controls="tabs-home" aria-selected="true">Derniers </br>articles</a>
+				</li>
+				<li role="presentation">
+					<a href="#tabs-profile" class="my-2 block border-2 border-konbini-600 rounded-r-lg  px-6 py-3.5 pb-3.5 text-xs font-bold uppercase leading-tight text-konbini-600 hover:isolate  hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:bg-konbini-600 data-[te-nav-active]:text-white" data-te-toggle="pill" data-te-target="#tabs-profile" role="tab" aria-controls="tabs-profile" aria-selected="false">Les plus </br>lus</a>
+				</li>
+
+
+			</ul>
+			<div class="mb-6">
+			<!-- Dernier article -->
+				<div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Mamma mia : oui, le film Super Mario Bros est vraiment une grande réussite</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
+					</div>
+
+				</div>
+				<!-- Fin div -->
+				<!-- Plus lus -->
+				<div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Voilà pourquoi j’ai freiné mon binge scrolling après avoir maté le docu Génération écrans : génération malade</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
+					</div>
+					<div class="flex justify-between px-4 py-2 h-full hover:underline bg-tahiti-600 text-left">
+						<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+						<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="flex flex-col bg-konbini-800 text-white mx-8 rounded-lg mt-10">
+			<p class="p-4 font-bold text-big ">Pépite by prime video
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/génération-écrans.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Voilà pourquoi j’ai freiné mon binge scrolling après avoir maté le docu Génération écrans : génération malade</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/La-pépite-de-RebeuDeter-Horizontal.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">“Reservoir Dogs” : La Pépite de RebeuDeter</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/Tarantino.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Tarantino, itinéraire d’un féru d’hémoglobine</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/manger-exctinction.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Manger nous mène à l’extinction, ce qu’on a retenu du docu choc de Kate Winslet</a>
+				</div>
+				<div class="flex justify-between p-4 h-full hover:underline bg-tahiti-600 text-left">
+					<img src="{{ asset('build/images/Suicide-squad.webp')}}" alt="Image" class="object-cover w-16 h-16 my-auto rounded-lg">
+					<a class="text-p font-bold ml-4 mx-auto" href="">Harley Quinn, Deadshot… Quel taré de la Suicide Squad décrocherait la Palme d’or du pire codétenu d’Arkham Asylum ?</a>
+				</div>
+				<div class="flex justify-start mt-10 mx-auto">
+					<a class="my-6 mx-6 bg-white text-konbini-600 text-s pt-0.5 pr-3 pb-0.5 pl-3" href="">Découvrir pépite</a>
+				</div>
+			</p>
+		</div>
+
+
+<div class="bg-konbini-100 h-fit mx-8 rounded-lg mt-10 inline-flex flex flex-col">
+    <p class="p-2 font-bold text-b text-left">Le meilleur de <span class="text-konbini-400 font-bold">Konbini</span>, par la rédac de <span class="text-konbini-400 font-bold">Konbini</span> en exclu dans sa <span class="text-konbini-400 font-bold">Newsletter</span></p>
+    <form class="flex flex-col mx-auto mb-auto h-auto w-80">
+	<input type="email" name="email" placeholder="Email" class="my-4 w-90 bg-white text-konbini-600 rounded-lg text-s p-2 font-thin text-xs"  />
+	<a class="w-90 bg-konbini-400 text-white text-s p-2 rounded-full" href="">Je m'inscris</a>
+	</form>
+	<div class="p-2 font-bold text-b text-left">
+	<a class="text-left font-small text-si text-konbini-600" id="toggle-text">En renseignant votre nom et adres...</br>
+	<span class="cursor-pointer underline decoration-1">Lire plus</span></a>
+    <div class="hidden" id="text-to-show">
+        <p class="text-left font-small text-si text-konbini-600">En renseignant votre nom et adresse email, vous acceptez de recevoir chaque semaine notre newsletter et vous prenez connaissance de notre <a class="underline" href="https://konbini-privacy-policy.mystrikingly.com/">Politique de confidentialité.</a></p>
+    </div>
+	</div>
+</div>
+
+
+
+
+
+	</div>
+</div>
+<div class="mb-4"></div>
+
+<script>
+  const toggleBtn = document.getElementById('toggle-text');
+  const textToShow = document.getElementById('text-to-show');
+
+  toggleBtn.addEventListener('click', () => {
+    textToShow.classList.toggle('hidden');
+    toggleBtn.classList.add('hidden');
+  });
+</script>
+
+
+
+
+
+
+{% endblock %}
