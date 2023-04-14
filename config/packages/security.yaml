@@ -25,6 +25,11 @@ security:
                   password_path: password
                   success_handler: lexik_jwt_authentication.handler.authentication_success
                   failure_handler: lexik_jwt_authentication.handler.authentication_failure
+             custom_authenticator: App\Security\LoginAuthenticator
+             logout:
+                 path: app_logout
+                 # where to redirect after logout
+                 # target: app_any_route
         
 
             # activate different ways to authenticate
